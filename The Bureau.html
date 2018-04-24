@@ -31,7 +31,7 @@ You couldn&#39;t take your eyes off it, yes, but you didn&#39;t want to either. 
 
 You still don&#39;t know how to describe the feeling it gave you. Something new, something strange. You think back to your earliest memories and that feeling of newness, both exciting and fearful, but beyond that comes close to approaching how you feel but falls short. Rather, it seems like that old feeling is really a smudged reflection of what you are seeing now.
 
-[[The feeling subsided quickly, but the next time you feel it, you&#39;ll know.-&gt;March 3rd, 1949]]</tw-passagedata><tw-passagedata pid="5" name="March 3rd, 1949" tags="" position="708,680" size="100,100">March 3rd, 1949. Ten years to the day since your first experience, the one that changed you. It&#39;d been several years since the war ended, and the world had moved on. The nation&#39;s experience of the war was much the same as yours.
+[[The feeling subsided quickly, but the next time you feel it, you&#39;ll know.-&gt;March 3rd, 1949]]</tw-passagedata><tw-passagedata pid="5" name="March 3rd, 1949" tags="" position="708,680" size="100,100">March 3rd, 1949. Twelve years to the day since your first experience, the one that changed you. It&#39;s been several years since the war ended, and the world has moved on. The nation&#39;s experience of the war was much the same as yours.
 
 [[We felt the pride of victory.]]
 [[We became bitter after defeat.]]
@@ -46,7 +46,7 @@ You remember V-Day with great joy. War was over! The streets filled with people,
 
 The end of the war was the end of the nation. Reduced to a smouldering wreck, the years of trading bullets and smoke, tearing holes oozing grease and blood, and crushing concrete into rubble, were for nothing. More than nothing, worse than nothing. War isn&#39;t a zero-sum game: someone wins, and it wasn&#39;t you. The nation, once proud and determined, sinks into depression and slowly channels its anger into bitterness against the victor.
 
-[[We will not forget.-&gt;Your experience of the war]]</tw-passagedata><tw-passagedata pid="9" name="Soldier" tags="" position="528,1156" size="100,100">(set: $service to &quot;soldier&quot;)
+[[We will not forget.-&gt;Your experience of the war]]</tw-passagedata><tw-passagedata pid="9" name="Soldier" tags="" position="534,1168" size="100,100">(set: $service to &quot;soldier&quot;)
 
 (if: $war is &quot;defeat&quot;)[You remember shivering in a bunker, crouched against a wall, rifle clasped in your hands. You heard shouting, the sloshing of mud. Grinding your teeth, you swivelled into position and aimed through the slot in the concrete. A man in blue runs towards you, you track him and fire. Instead of a sharp noise and sharper kickback, your gun clicks into a void. You swear but your voice catches in your throat and everything subtly changes. The man seems to be running away, not towards you, and his shouting is not to bolster himself but to express his fear. The night is far too bright for the moon.
 
@@ -58,7 +58,7 @@ Slowly, it drifts into view. It is so dazzling, so piercing. Just like the first
 
 Glowing, pulsing, floating above the stag. Graceful, beautiful in a very strange way. (if: $joy is 0)[It feels different to last time. This time you smile and break out into laughter.](else:)[It feels like the last time. You feel so full and you can&#39;t stop yourself laughing.](set: $joy to it + 1) Your NCO motions at you to stop, but you can&#39;t.
 
-[[When you look back in the clearing, it is empty.|March 3rd 2]]]
+[[When you look back, the clearing is empty.|March 3rd 2]]]
 
 (if: $war is &quot;victory&quot;)[12th Battalion were legends, and this was your best story yet. The fortress was conquered, its courtyard littered with masonry, enemy officers lined up on one wall. The lieutenant is singing your unit&#39;s praises, congratulating you on a hard-won victory. 
 
@@ -66,13 +66,19 @@ Mid-sentence, there is a crack and his head explodes. You turn to the noise and 
 
 The room lights up with a pale brilliance, and you look up. Your attacker is frozen still, gun cocked and ready to fire. He is expressionless.(if: $unnameable is 0)[It feels different to last time. This time you don&#39;t know what you are feeling. The feeling is like being a child again, meeting  something much bigger than you for the first, only so much stronger than that. You will recognise the feeling next time you meet it.](else:)[You knew you&#39;d know it when you felt it next, and you do. That unnameable, strange, new-yet-familiar feeling.](set: $unnameable to it + 1) Slowly, the light fades and with it the feeling and the enemy soldier. You lie in the dark until someones find you.
 
-[[Your medal for bravery is one of your most prized possessions, but it still holds a sliver of that strange feeling.]]]</tw-passagedata><tw-passagedata pid="10" name="Engineer" tags="" position="875,1177" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="11" name="Startup" tags="startup" position="613,234" size="100,100">(set: $terror to 0)
+[[Your medal for bravery is one of your most prized possessions, but it still holds a sliver of that strange feeling.|March 3rd 2]]]]]</tw-passagedata><tw-passagedata pid="10" name="Engineer" tags="" position="875,1177" size="100,100">(set: $service to &quot;engineer&quot;)
+
+[[You served as an engineer back home, building war machines.|March 3rd 2]]</tw-passagedata><tw-passagedata pid="11" name="Startup" tags="startup" position="613,234" size="100,100">(set: $terror to 0)
 (set: $joy to 0)
-(set: $unnameable to 0)</tw-passagedata><tw-passagedata pid="12" name="Intelligence" tags="" position="715,1167" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="13" name="We remained indifferent, a pawn moved from one player to another." tags="" position="827,830" size="100,100">(set: $war to &quot;neutral&quot;)
+(set: $unnameable to 0)</tw-passagedata><tw-passagedata pid="12" name="Intelligence" tags="" position="715,1166" size="100,100">(set: $service to &quot;intelligence&quot;)
+
+[[You served in military intelligence.|March 3rd 2]]</tw-passagedata><tw-passagedata pid="13" name="We remained indifferent, a pawn moved from one player to another." tags="" position="827,830" size="100,100">(set: $war to &quot;neutral&quot;)
 
 The nation has always played counterpoint to the others. Standing in the background in so many paintings, behind those shaking hands or drawing swords, carefully observing. The nation began to recoup its losses, its people mostly not noticing that its allegiance had shifted. Another year, another language, another friend, another name, another enemy. Silently, the nation works and waits, ready to bite the hand that feeds it.
 
-[[Patience is the supreme virtue.-&gt;Your experience of the war]] </tw-passagedata><tw-passagedata pid="14" name="March 3rd 2" tags="" position="601,1358" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="15" name="Your medal for bravery is one of your most prized possessions, but it still holds a sliver of that strange feeling." tags="" position="491,1307" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+[[Patience is the supreme virtue.-&gt;Your experience of the war]] </tw-passagedata><tw-passagedata pid="14" name="March 3rd 2" tags="" position="709,1385" size="100,100">March 3rd, 1949. Twelve years to the day since your first experience, the one that changed you. Five years, three months, and twelve days since your second experience, the one that changed you again. It&#39;s been several years since the war ended, and the world may have moved on, but you haven&#39;t.
+
+[[You lose sleep every night thinking about your experiences]]</tw-passagedata><tw-passagedata pid="15" name="You lose sleep every night thinking about your experiences" tags="" position="709,1535" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
